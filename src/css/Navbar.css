@@ -1,6 +1,6 @@
-.color-nav-personalizado{
-    background-color:#b1ad9f;
-    
-    font-family: 'Edu NSW ACT Foundation', cursive;
-    font-size: 20px;
-    }
+
+.NavbarC{
+background-color: light;
+padding: 1rem 2rem;
+border-bottom: 1px solid gray;
+}

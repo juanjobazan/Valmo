@@ -1,0 +1,19 @@
+.sidebar{
+    width: 14rem;
+    height: calc(100vh - 52px);
+    border-right: 1px solid gray;
+    
+    ul{
+        list-style: none;
+        padding: 2rem 2 rem ;
+        li{
+            margin-bottom: 1rem;
+            a{
+                text-decoration: none;
+                &.active{
+                    background-color:#b3b6b7 ;
+                }
+            }
+        }
+    }
+}
