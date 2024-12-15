@@ -1,19 +1,104 @@
 .sidebar{
-    width: 14rem;
-    height: calc(100vh - 52px);
-    border-right: 1px solid gray;
+  
     
     ul{
         list-style: none;
-        padding: 2rem 2 rem ;
+        padding: 1rem;  
         li{
             margin-bottom: 1rem;
             a{
                 text-decoration: none;
                 &.active{
-                    background-color:#b3b6b7 ;
+                    background-color:#b3b6b7;
                 }
             }
         }
     }
-}
+} 
+
+
+
+/* posicion y tamaño del boton */
+.bm-burger-button {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    left: 20px;
+    top: 20px;
+  }
+  
+  /* color y forma del boton*/
+  .bm-burger-bars {
+    background: #373a47;
+  }
+  
+  /* color del boton */
+  .bm-burger-bars-hover {
+    background: #a90000;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* color del boton cierre */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations
+   - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #bb920c;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+    color: #d1d1d1;
+    margin-bottom: 10px;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .bm-item:hover {
+    color: #ffffff;
+  }
+
+  
+  /* @media screen and (max-width: 55rem) {
+    .bm-burger-button {
+      display: none;
+    }
+  } */
+  

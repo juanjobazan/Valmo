@@ -10,7 +10,7 @@ const RoutesFront = () => {
   return (
     <>
     
-      <div className='d-flex'>
+     
         <Sidebar />
 
         <div className='content w-100'>
@@ -21,7 +21,7 @@ const RoutesFront = () => {
             <Route path='product' element={<Product />} />
           </Routes>
         </div>
-      </div>
+    
     </>
   )
 }
