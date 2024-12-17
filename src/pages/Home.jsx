@@ -1,10 +1,20 @@
 import React from 'react'
 
+import { Container, Row } from 'react-bootstrap'
+import CardC from '../components/CardC'
 const Home = () => {
   return (
-    <div>
-      Home
-    </div>
+    <>
+    <Container>
+      <Row className='col-xl-12'>
+     <CardC/>
+
+        homevnbnbvnvnv
+
+      </Row>
+    </Container>
+      
+    </>
   )
 }
 

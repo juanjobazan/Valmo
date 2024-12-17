@@ -21,6 +21,7 @@ const RoutesFront = () => {
             <Route path='/' element={<Home />} />
             <Route path='/clientes' element={<Clientes />} />
             <Route path='/product' element={<Product />} />
+            
 
           </Routes>
         </div>
