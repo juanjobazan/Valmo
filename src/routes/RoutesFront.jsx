@@ -6,6 +6,7 @@ import Home from '../pages/Home'
 import Clientes from '../pages/Clientes'
 import Product from '../pages/Product'
 import Login from '../components/LoginC'
+import Footer from '../components/Footer'
 
 const RoutesFront = () => {
   return (
@@ -24,6 +25,7 @@ const RoutesFront = () => {
             
 
           </Routes>
+          <Footer/>
         </div>
     
     </>
