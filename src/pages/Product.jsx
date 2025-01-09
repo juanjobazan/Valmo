@@ -2,8 +2,9 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { Button, Card } from 'react-bootstrap'
 import { ImOpt } from 'react-icons/im'
+import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
-
+import clienteAxios from '../utils/axiosCliente'
 
 const Product = () => {
   const params = useParams()
@@ -12,9 +13,9 @@ const Product = () => {
 
   useEffect(() => {
     const getOneProduct = async () => {
-      const res = await fetch(`http://localhost:4000/productos/${params.id}`)
-      const resJson = await res.json()
-      setProducts(resJson)
+      const res = await clienteAxios.get(`/productos/${params.id}`)
+      //const resJson = await res.json()
+      setProducts(res.data)
       
     }
       getOneProduct()
@@ -24,6 +25,7 @@ return (
   <>
 
 {product?.map((product)=>
+
   <Card key={product.key} className="d-flex">
 
   <div className="w-25">
@@ -39,6 +41,7 @@ return (
       $AR {product.precio}
     </Card.Text>
     <Button >Pagar</Button>
+    <Link to={'/'} className='mx-3 btn btn-light'>Regresar</Link>
   </Card.Body>
 </Card>)}
 

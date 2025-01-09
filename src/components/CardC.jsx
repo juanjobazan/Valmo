@@ -12,7 +12,7 @@ return (
 
   arrayProduct?.map((product)=>
   <Card style={{ width: '18rem' }} key={product.id} className='card my-3 mx-3 mt-2 mb-3 m-3'>
-  <Card.Img variant="top" src={product.url} />
+  <Card.Img variant="top" src={product.urlImagen} />
   <Card.Body>
     <Card.Title className='card-title '>{product.nombre}</Card.Title>
     <Card.Text className='card-text'>

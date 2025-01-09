@@ -6,7 +6,7 @@ import "../css/sidebar.css"
 
 
 const Sidebar = () => {
-  
+
   return (
     <div className='sidebar '>
       <Menu>
@@ -16,7 +16,7 @@ const Sidebar = () => {
             <NavLink to="/" exact className='text-light rounded py-2 w-100  d-inline-block px-3'><Faicons.FaHome className='me-2' />Inicio</NavLink>
           </li>
           <li>
-            <NavLink to="/clientes" exact className='text-light rounded py-2 w-100 d-inline-block px-3' ><Faicons.FaCartArrowDown className='me-2' />Carrito</NavLink>
+            <NavLink to="/adminProduct" exact className='text-light rounded py-2 w-100 d-inline-block px-3' ><Faicons.FaCartPlus className='me-2' />Productos </NavLink>
           </li>
           <li>
             <NavLink to="/product" exact className='text-light rounded py-2 w-100 d-inline-block px-3'><Faicons.FaUser className='me-2' />Clientes</NavLink>

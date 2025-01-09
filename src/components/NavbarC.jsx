@@ -24,6 +24,12 @@ const NavbarC = () => {
           <Navbar.Brand href="#home">Logo</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+                  <NavLink to={"/createNuevoProduct"} className={'nav-link'}>Nuevo Producto</NavLink>
+                  <NavLink to="/habitacion" className={'nav-link'}>Habitaciones</NavLink>
+                  <NavLink to="/servicio" className={'nav-link'}>Servicios</NavLink>
+                  <NavLink to="/compra" className={'nav-link'}>Mis Reservas</NavLink>
+                </Nav>
             <Nav className='ms-auto'>
               <Button className='btn btn-outline-light nav-link text-dark  mx-5' onClick={handleShow}>
                 Iniciar Session

@@ -7,27 +7,33 @@ import Clientes from '../pages/Clientes'
 import Product from '../pages/Product'
 import Login from '../components/LoginC'
 import Footer from '../components/Footer'
-
+import Error from '../pages/Error'
+import Carrousel from '../components/Carrousel'
+import Adminproduct from '../pages/Adminproduct'
+import CreateProduct from '../pages/CreateProduct'
 const RoutesFront = () => {
   return (
     <>
-    
-     
-        <Sidebar />
 
-        <div className='content w-100'>
+
+      <Sidebar />
+
+      <div className='content w-100'>
         <NavbarC />
-          <Routes>
+        <Carrousel />
+        <Routes>
           <Route path='/login' element={<Login />} />
-            <Route path='/' element={<Home />} />
-            <Route path='/clientes' element={<Clientes />} />
-            <Route path='/productos/:id' element={<Product />} />
-            
+          <Route path='/' element={<Home />} />
+          <Route path='/clientes' element={<Clientes />} />
+          <Route path='/productos/:id' element={<Product />} />
+          <Route path='/*' element={<Error />} />
+          <Route path='/adminProduct' element={<Adminproduct/>}/>
+          <Route path='/createNuevoProduct' element={<CreateProduct/>}/>
 
-          </Routes>
-          <Footer/>
-        </div>
-    
+        </Routes>
+        <Footer />
+      </div>
+
     </>
   )
 }
