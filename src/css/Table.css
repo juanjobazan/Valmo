@@ -1,0 +1,19 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    table {
+        font-size: 14px;
+    }
+    th, td {
+        padding: 5px;
+    }
+}

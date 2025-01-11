@@ -11,6 +11,7 @@ import Error from '../pages/Error'
 import Carrousel from '../components/Carrousel'
 import Adminproduct from '../pages/Adminproduct'
 import CreateProduct from '../pages/CreateProduct'
+import ProductAdminPage from '../pages/ProductAdminPage'
 const RoutesFront = () => {
   return (
     <>
@@ -29,6 +30,7 @@ const RoutesFront = () => {
           <Route path='/*' element={<Error />} />
           <Route path='/adminProduct' element={<Adminproduct/>}/>
           <Route path='/createNuevoProduct' element={<CreateProduct/>}/>
+          <Route path='/ProductAdmin' element={<ProductAdminPage/>}/>
 
         </Routes>
         <Footer />

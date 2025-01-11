@@ -26,7 +26,7 @@ const NavbarC = () => {
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
                   <NavLink to={"/createNuevoProduct"} className={'nav-link'}>Nuevo Producto</NavLink>
-                  <NavLink to="/habitacion" className={'nav-link'}>Habitaciones</NavLink>
+                  <NavLink to="/ProductAdmin" className={'nav-link'}>BM Productos</NavLink>
                   <NavLink to="/servicio" className={'nav-link'}>Servicios</NavLink>
                   <NavLink to="/compra" className={'nav-link'}>Mis Reservas</NavLink>
                 </Nav>
