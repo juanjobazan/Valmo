@@ -52,9 +52,8 @@ const NavbarC = () => {
                   </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                  <Button variant="secondary" onClick={handleClose}>
-                   Cancelar
-                  </Button>
+            
+                <NavLink to="/createUser" className="nav-link text-center ">Registrate</NavLink>
                   <Button variant="primary" onClick={handleClose}>
                     iniciar Session
                   </Button>

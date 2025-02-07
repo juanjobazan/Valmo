@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Container, Row } from 'react-bootstrap'
 import CardC from '../components/CardC'
+import SeacrchP from '../components/SeacrchP'
 
 
 const Home = () => {
@@ -18,9 +19,10 @@ const Home = () => {
   return (
     <>
       <Container className='py-2'>
+      <SeacrchP></SeacrchP>
+      <br />
         <Row className='col-xl-12'>
-
-          <CardC arrayProduct={product} />
+        <CardC arrayProduct={product} />
           
 
 

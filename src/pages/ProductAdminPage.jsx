@@ -4,10 +4,13 @@ import '../css/Table.css'
 import clienteAxios from '../utils/axiosCliente';
 import { Button } from 'react-bootstrap';
 import Swal from 'sweetalert2';
+import ModalC from '../components/ModalC';
+
 
 const ProductAdminPage = () => {
     const [product, setProducts] = useState([])
     const [refreshState, resRefreshState] = useState(false)
+    
     const getApi = async () => {
         const res = await clienteAxios.get('/productos')
         setProducts(res.data)
@@ -91,7 +94,7 @@ const ProductAdminPage = () => {
                                 <td>{prod.nombre}</td>
                                 <td>{prod.precio}</td>
                                 <td>
-                                    
+                                    <ModalC idProd={prod.id} getApi={getApi}/>
                                     <Button variant='danger' onClick={() => { handleClick(prod.id) }}>Eliminar</Button></td>
                             </tr>
 

@@ -1,9 +1,10 @@
 import React from 'react'
+import SeacrchP from '../components/SeacrchP'
 
 const Clientes = () => {
   return (
     <div>
-      clientes
+    <SeacrchP></SeacrchP>
     </div>
   )
 }
